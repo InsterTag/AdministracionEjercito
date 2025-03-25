@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('barracks_companies', function (Blueprint $table) {
             $table->id();
 
+            $table->string('date');
             $table->unsignedBigInteger('barracks_fk')->nullable();
             $table->foreign('barracks_fk')
             ->references('id')

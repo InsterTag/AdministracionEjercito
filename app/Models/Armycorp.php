@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use App\Models\Soldier;
 use Illuminate\Database\Eloquent\Model;
 
 class Armycorp extends Model

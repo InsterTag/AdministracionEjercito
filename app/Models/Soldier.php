@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use App\Models\Services;
+use App\Models\Armycorp;
 
 use Illuminate\Database\Eloquent\Model;
 

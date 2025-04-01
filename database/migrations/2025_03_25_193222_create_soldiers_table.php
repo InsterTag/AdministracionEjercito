@@ -17,20 +17,20 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('grade');
 
-            $table->unsignedBigInteger('army_corp_fk')->nullable();
-            $table->foreign('army_corp_fk')
+            $table->unsignedBigInteger('army_corp_id')->nullable();
+            $table->foreign('army_corp_id')
             ->references('id')
             ->on('armycorps')
             ->onDelete('set null');
 
-            $table->unsignedBigInteger('company_fk')->nullable();
-            $table->foreign('company_fk')
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')
             ->references('id')
             ->on('companies')
             ->onDelete('set null');
 
-            $table->unsignedBigInteger('barracks_fk')->nullable();
-            $table->foreign('barracks_fk')
+            $table->unsignedBigInteger('barracks_id')->nullable();
+            $table->foreign('barracks_id')
             ->references('id')
             ->on('barracks')
             ->onDelete('set null');

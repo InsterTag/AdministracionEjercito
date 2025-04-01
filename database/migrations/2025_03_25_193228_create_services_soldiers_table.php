@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('services_soldiers', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger('service_fk')->nullable();
-            $table->foreign('service_fk')
+            $table->unsignedBigInteger('service_id')->nullable();
+            $table->foreign('service_id')
             ->references('id')
             ->on('services')
             ->onDelete('cascade');
 
-            $table->unsignedBigInteger('soldier_fk')->nullable();
-            $table->foreign('soldier_fk')
+            $table->unsignedBigInteger('soldier_id')->nullable();
+            $table->foreign('soldier_id')
             ->references('id')
             ->on('soldiers')
             ->onDelete('cascade');

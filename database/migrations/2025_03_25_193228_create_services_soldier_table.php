@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('services_soldiers', function (Blueprint $table) {
+        Schema::create('services_soldier', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger('service_id')->nullable();
-            $table->foreign('service_id')
+            $table->unsignedBigInteger('services_id')->nullable();
+            $table->foreign('services_id')
             ->references('id')
             ->on('services')
             ->onDelete('cascade');

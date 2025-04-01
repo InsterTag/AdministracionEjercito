@@ -8,6 +8,8 @@ class ConsultasController extends Controller
 {
     public function consulta(){
         $soldiers = Soldier::find(1);
-        return $soldiers->ArmyCorp;
+        $soldiers->Services()->attach(1);
+
+        return $soldiers;
     }
 }

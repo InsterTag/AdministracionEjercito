@@ -12,6 +12,8 @@ Route::post('/crearCuartel',[BarracksController::class,'agg_barracks'])->name('b
 Route::get('/formularioCompania',[CompanyController::class,'create']);
 Route::post('/crearCompania',[CompanyController::class,'agg_company'])->name('company.ss');
 
-Route::get('/consultas',[ConsultasController::class,'consulta']);
+
+// Ruta para probar las consultas
+Route::get('/consultas',[ConsultasController::class,'consulta1']);
 
 
